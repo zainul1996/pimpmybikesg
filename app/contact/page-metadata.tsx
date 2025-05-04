@@ -5,16 +5,16 @@ export function generateMetadata(): Metadata {
     title: "Contact Us | PimpMyBike SG - Singapore's Motorcycle Detailing Service",
     description: "Get in touch with PimpMyBike SG for premium motorcycle detailing services in Singapore. Visit our location, call us, or send a message to book your service today.",
     alternates: {
-      canonical: "https://pimpmybikesg.vercel.app/contact",
+      canonical: "https://pimpmybike.sg/contact",
     },
     openGraph: {
       title: "Contact Us | PimpMyBike SG - Singapore's Motorcycle Detailing Service",
       description: "Get in touch with PimpMyBike SG for premium motorcycle detailing services in Singapore. Visit our location, call us, or send a message to book your service today.",
-      url: "https://pimpmybikesg.vercel.app/contact",
+      url: "https://pimpmybike.sg/contact",
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "https://pimpmybikesg.vercel.app/opengraph-image",
+          url: "/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "Contact PimpMyBike SG - Premium Motorcycle Detailing Services",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Contact Us | PimpMyBike SG - Singapore's Motorcycle Detailing Service",
       description: "Get in touch with PimpMyBike SG for premium motorcycle detailing services in Singapore. Visit our location, call us, or send a message to book your service today.",
-      images: ["https://pimpmybikesg.vercel.app/opengraph-image"],
+      images: ["/opengraph-image.png"],
     },
     keywords: [
       "contact motorcycle detailer",

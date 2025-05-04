@@ -5,16 +5,16 @@ export function generateMetadata(): Metadata {
     title: "Pricing | PimpMyBike SG - Motorcycle Detailing Service Packages",
     description: "Explore our motorcycle detailing pricing packages in Singapore, from basic cleaning to premium services including ceramic coating and paint correction. Find the perfect package for your bike.",
     alternates: {
-      canonical: "https://pimpmybikesg.vercel.app/pricing",
+      canonical: "https://pimpmybike.sg/pricing",
     },
     openGraph: {
       title: "Pricing | PimpMyBike SG - Motorcycle Detailing Service Packages",
       description: "Explore our motorcycle detailing pricing packages in Singapore, from basic cleaning to premium services including ceramic coating and paint correction. Find the perfect package for your bike.",
-      url: "https://pimpmybikesg.vercel.app/pricing",
+      url: "https://pimpmybike.sg/pricing",
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "https://pimpmybikesg.vercel.app/opengraph-image",
+          url: "/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "PimpMyBike SG - Motorcycle Detailing Pricing Packages",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Pricing | PimpMyBike SG - Motorcycle Detailing Service Packages",
       description: "Explore our motorcycle detailing pricing packages in Singapore, from basic cleaning to premium services including ceramic coating and paint correction. Find the perfect package for your bike.",
-      images: ["https://pimpmybikesg.vercel.app/opengraph-image"],
+      images: ["/opengraph-image.png"],
     },
     keywords: [
       "motorcycle detailing pricing",

@@ -5,16 +5,16 @@ export function generateMetadata(): Metadata {
     title: "About Us | PimpMyBike SG - Singapore's Premier Motorcycle Detailers",
     description: "Learn about PimpMyBike SG, Singapore's specialized motorcycle detailing service founded by riders for riders. Discover our story, approach, and team.",
     alternates: {
-      canonical: "https://pimpmybikesg.vercel.app/about",
+      canonical: "https://pimpmybike.sg/about",
     },
     openGraph: {
       title: "About Us | PimpMyBike SG - Singapore's Premier Motorcycle Detailers",
       description: "Learn about PimpMyBike SG, Singapore's specialized motorcycle detailing service founded by riders for riders. Discover our story, approach, and team.",
-      url: "https://pimpmybikesg.vercel.app/about",
+      url: "https://pimpmybike.sg/about",
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "https://pimpmybikesg.vercel.app/opengraph-image",
+          url: "/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "PimpMyBike SG Team - Motorcycle Detailing Specialists",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "About Us | PimpMyBike SG - Singapore's Premier Motorcycle Detailers",
       description: "Learn about PimpMyBike SG, Singapore's specialized motorcycle detailing service founded by riders for riders. Discover our story, approach, and team.",
-      images: ["https://pimpmybikesg.vercel.app/opengraph-image"],
+      images: ["/opengraph-image.png"],
     },
     keywords: [
       "motorcycle detailing Singapore",
