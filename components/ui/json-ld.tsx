@@ -30,26 +30,42 @@ export function JSONLD({ type, data }: JSONLDProps) {
 
 export function OrganizationJSONLD() {
   const data: JSONLDObject = {
-    name: "PimpMyBike SG",
-    url: "https://pimpmybike.sg",
-    logo: "https://pimpmybike.sg/logo.png", // Replace with actual logo when available
+    name: "PimpMyBikeSG",
+    url: "https://www.pimpmybike.sg",
+    logo: "https://www.pimpmybike.sg/logo.png",
     sameAs: [
-      "https://facebook.com/pimpmybikesg", // Replace with actual social profiles when available
-      "https://instagram.com/pimpmybikesg",
+      "https://www.instagram.com/pimpmybike.sg/",
+      "https://www.tiktok.com/@pimpmybike.sg",
+      "https://www.youtube.com/user/Wix"
     ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Bike Street", // Replace with actual address
+      streetAddress: "7A Marsiling Drive",
       addressLocality: "Singapore",
-      postalCode: "123456",
+      postalCode: "730007",
       addressCountry: "SG",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+65-1234-5678", // Replace with actual phone
+      telephone: "+6587918141",
       contactType: "customer service",
     },
     description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "11:00",
+        closes: "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Saturday"],
+        opens: "13:00",
+        closes: "18:00"
+      }
+    ],
+    priceRange: "$$"
   };
 
   return <JSONLD type="LocalBusiness" data={data} />;
@@ -61,18 +77,50 @@ export function ServiceJSONLD() {
     serviceType: "Motorcycle Detailing",
     provider: {
       "@type": "LocalBusiness",
-      name: "PimpMyBike SG",
+      name: "PimpMyBikeSG",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "7A Marsiling Drive",
+        addressLocality: "Singapore",
+        postalCode: "730007",
+        addressCountry: "SG"
+      }
     },
     areaServed: {
       "@type": "Country",
-      name: "Singapore",
+      name: "Singapore"
     },
     description: "Premium motorcycle detailing services including deep cleaning, polishing, ceramic coating, and more.",
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      priceCurrency: "SGD",
-    },
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Standard Detailing - Class 2B",
+        price: "30.00",
+        priceCurrency: "SGD",
+        availability: "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        name: "Standard Detailing - Class 2A",
+        price: "35.00",
+        priceCurrency: "SGD",
+        availability: "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        name: "Standard Detailing - Class 2",
+        price: "40.00",
+        priceCurrency: "SGD",
+        availability: "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        name: "Glass Coating",
+        price: "280.00-350.00",
+        priceCurrency: "SGD",
+        availability: "https://schema.org/InStock"
+      }
+    ]
   };
 
   return <JSONLD type="Service" data={data} />;

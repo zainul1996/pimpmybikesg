@@ -237,14 +237,14 @@ export const NavbarLogo = () => {
     >
       <div className="w-[40px] h-[40px] relative overflow-hidden rounded-lg">
         <Image
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFN7dNilq-gOL8XFHkObOJM_1QLWsVrkasPg&s"
-          alt="PimpMyBike SG logo"
+          src="/logo.png"
+          alt="PimpMyBikeSG logo"
           width={40}
           height={40}
           className="object-cover w-full h-full"
         />
       </div>
-      <span className="font-medium text-foreground">PimpMyBike SG</span>
+      <span className="font-medium text-foreground">PimpMyBikeSG</span>
     </a>
   );
 };

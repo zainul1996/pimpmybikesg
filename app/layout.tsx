@@ -26,14 +26,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pimpmybike.sg"),
   title: {
-    default: "PimpMyBike SG | Premium Motorcycle Detailing Services",
-    template: "%s | PimpMyBike SG"
+    default: "PimpMyBikeSG | Premium Motorcycle Detailing Services",
+    template: "%s | PimpMyBikeSG"
   },
   description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
-  keywords: ["motorcycle detailing", "bike cleaning", "premium detailing", "Singapore", "motorcycle wash", "ceramic coating", "polishing", "bike detailing"],
-  authors: [{ name: "PimpMyBike SG" }],
-  creator: "PimpMyBike SG",
-  publisher: "PimpMyBike SG",
+  keywords: ["motorcycle detailing", "bike cleaning", "premium detailing", "Singapore", "motorcycle wash", "ceramic coating", "glass coating", "polishing", "bike detailing"],
+  authors: [{ name: "PimpMyBikeSG" }],
+  creator: "PimpMyBikeSG",
+  publisher: "PimpMyBikeSG",
   formatDetection: {
     email: false,
     address: false,
@@ -55,19 +55,19 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_SG",
     url: "https://www.pimpmybike.sg",
-    siteName: "PimpMyBike SG",
-    title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
+    siteName: "PimpMyBikeSG",
+    title: "PimpMyBikeSG | Premium Motorcycle Detailing Services",
     description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
     images: [{
       url: "https://www.pimpmybike.sg/opengraph-image.png",
       width: 1200,
       height: 630,
-      alt: "PimpMyBike SG",
+      alt: "PimpMyBikeSG",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
+    title: "PimpMyBikeSG | Premium Motorcycle Detailing Services",
     description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
     images: ["https://www.pimpmybike.sg/opengraph-image.png"],
     creator: "@pimpmybikesg",
