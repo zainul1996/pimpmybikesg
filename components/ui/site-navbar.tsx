@@ -29,6 +29,10 @@ export function SiteNavbar() {
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const handleBookCall = () => {
+    window.open("https://t.me/ameewull?text=I'd like to book a call to discuss detailing services for my motorcycle.", "_blank");
+  };
 
   return (
     <Navbar className="top-0">
@@ -38,7 +42,7 @@ export function SiteNavbar() {
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
           <NavbarButton variant="secondary">Login</NavbarButton>
-          <NavbarButton variant="primary">Book a call</NavbarButton>
+          <NavbarButton variant="primary" onClick={handleBookCall}>Book a call</NavbarButton>
         </div>
       </NavBody>
 
@@ -76,7 +80,10 @@ export function SiteNavbar() {
               Login
             </NavbarButton>
             <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                handleBookCall();
+              }}
               variant="primary"
               className="w-full"
             >
