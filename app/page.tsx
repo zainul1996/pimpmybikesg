@@ -2,6 +2,10 @@
 
 import { AdaptiveFocusCards } from "@/components/ui/adaptive-focus-cards";
 import { TestimonialsSection } from "@/components/ui/testimonials-section";
+import { OrganizationJSONLD, ServiceJSONLD } from "@/components/ui/json-ld";
+
+// Note: The metadata for this page is defined in page-metadata.tsx
+// We use a separate file because "use client" can't be combined with metadata exports
 
 export default function Home() {
   return (
@@ -15,6 +19,10 @@ export default function Home() {
       </div>
 
       <TestimonialsSection />
+      
+      {/* JSON-LD for structured data - good for SEO */}
+      <OrganizationJSONLD />
+      <ServiceJSONLD />
     </div>
   );
 }

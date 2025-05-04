@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteNavbar } from "@/components/ui/site-navbar";
 import { ThemeProvider } from "next-themes";
@@ -14,9 +14,77 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+}
+
 export const metadata: Metadata = {
-  title: "PimpMyBike SG",
-  description: "Premium bike customization services",
+  metadataBase: new URL("https://pimpmybike.sg"),
+  title: {
+    default: "PimpMyBike SG | Premium Motorcycle Detailing Services",
+    template: "%s | PimpMyBike SG"
+  },
+  description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
+  keywords: ["motorcycle detailing", "bike cleaning", "premium detailing", "Singapore", "motorcycle wash", "ceramic coating", "polishing", "bike detailing"],
+  authors: [{ name: "PimpMyBike SG" }],
+  creator: "PimpMyBike SG",
+  publisher: "PimpMyBike SG",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+      'max-snippet': -1,
+    }
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_SG",
+    url: "https://pimpmybike.sg",
+    siteName: "PimpMyBike SG",
+    title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
+    description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
+    images: [{
+      url: "https://pimpmybike.sg/opengraph-image",
+      width: 1200,
+      height: 630,
+      alt: "PimpMyBike SG",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
+    description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
+    images: ["https://pimpmybike.sg/opengraph-image"],
+    creator: "@pimpmybikesg",
+    site: "@pimpmybikesg",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  category: "Automotive",
 };
 
 export default function RootLayout({
