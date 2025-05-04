@@ -72,6 +72,8 @@ export function AdaptiveFocusCards({
         clearInterval(intervalRef.current);
       }
     };
+    // We're intentionally excluding startCycling to avoid unnecessary re-runs
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
   const startCycling = useCallback(() => {

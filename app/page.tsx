@@ -11,7 +11,6 @@ export default function Home() {
           title="Motorcycle Detailing"
           description="At PimpMyBikeSG, we deliver top-notch bike detailing services designed to elevate your riding experience. From deep cleans to specialized treatments, we help you unleash the full potential of your machine—making every ride smoother, sharper, and undeniably yours."
           interval={2500}
-          transitionTime={100}
         />
       </div>
 
