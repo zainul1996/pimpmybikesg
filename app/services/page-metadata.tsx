@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "/opengraph-image.png",
+          url: "https://www.pimpmybike.sg/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "PimpMyBike SG - Motorcycle Detailing Services",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Motorcycle Detailing Services | PimpMyBike SG",
       description: "Explore our range of premium motorcycle detailing services including basic cleaning, ceramic coating, engine detailing, and paint correction in Singapore.",
-      images: ["/opengraph-image.png"],
+      images: ["https://www.pimpmybike.sg/opengraph-image.png"],
     },
     keywords: [
       "motorcycle detailing services",

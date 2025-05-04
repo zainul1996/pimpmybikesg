@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pimpmybike.sg"),
+  metadataBase: new URL("https://www.pimpmybike.sg"),
   title: {
     default: "PimpMyBike SG | Premium Motorcycle Detailing Services",
     template: "%s | PimpMyBike SG"
@@ -54,12 +54,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_SG",
-    url: "https://pimpmybike.sg",
+    url: "https://www.pimpmybike.sg",
     siteName: "PimpMyBike SG",
     title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
     description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
     images: [{
-      url: "https://pimpmybike.sg/opengraph-image",
+      url: "https://www.pimpmybike.sg/opengraph-image.png",
       width: 1200,
       height: 630,
       alt: "PimpMyBike SG",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PimpMyBike SG | Premium Motorcycle Detailing Services",
     description: "Premium motorcycle detailing services in Singapore. From deep cleans to specialized treatments, we help you unleash the full potential of your machine.",
-    images: ["https://pimpmybike.sg/opengraph-image"],
+    images: ["https://www.pimpmybike.sg/opengraph-image.png"],
     creator: "@pimpmybikesg",
     site: "@pimpmybikesg",
   },

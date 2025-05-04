@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "/opengraph-image.png",
+          url: "https://www.pimpmybike.sg/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "PimpMyBike SG - Motorcycle Detailing Pricing Packages",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Pricing | PimpMyBike SG - Motorcycle Detailing Service Packages",
       description: "Explore our motorcycle detailing pricing packages in Singapore, from basic cleaning to premium services including ceramic coating and paint correction. Find the perfect package for your bike.",
-      images: ["/opengraph-image.png"],
+      images: ["https://www.pimpmybike.sg/opengraph-image.png"],
     },
     keywords: [
       "motorcycle detailing pricing",

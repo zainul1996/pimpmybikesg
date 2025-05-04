@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pimpmybike.sg";
+  const baseUrl = "https://www.pimpmybike.sg";
   const currentDate = new Date().toISOString();
 
   // Base pages that we know exist

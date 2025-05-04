@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://pimpmybike.sg/sitemap.xml",
+    sitemap: "https://www.pimpmybike.sg/sitemap.xml",
   };
 } 

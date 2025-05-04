@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
       siteName: "PimpMyBike SG",
       images: [
         {
-          url: "/opengraph-image.png",
+          url: "https://www.pimpmybike.sg/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "Contact PimpMyBike SG - Premium Motorcycle Detailing Services",
@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Contact Us | PimpMyBike SG - Singapore's Motorcycle Detailing Service",
       description: "Get in touch with PimpMyBike SG for premium motorcycle detailing services in Singapore. Visit our location, call us, or send a message to book your service today.",
-      images: ["/opengraph-image.png"],
+      images: ["https://www.pimpmybike.sg/opengraph-image.png"],
     },
     keywords: [
       "contact motorcycle detailer",
